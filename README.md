@@ -49,16 +49,19 @@ Robotics (nearest neighbor path planning)
 Machine learning (for clustering and classification with spatial data)
 
 How It Works
-Tree Construction
+
+Tree Construction:
+
 Splits data alternately by latitude (x-axis) and longitude (y-axis) at each tree level using the median to ensure balance.
 
-Querying
+Querying:
 
 Point Lookup: Performs a binary search through the tree, alternating between x and y comparisons.
 
 Nearest Neighbor: Tracks the closest point during traversal and uses pruning to avoid unnecessary branches.
 
-Future Improvements
+Future Improvements:
+
 Support for higher-dimensional data (k > 2).
 
 Visualization tools for KD-Tree structure and query results.
